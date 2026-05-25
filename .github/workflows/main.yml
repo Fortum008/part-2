@@ -23,4 +23,4 @@ jobs:
     - name: Compile Java files
       run: |
         mkdir -p out
-        javac -d out Assignment_1/Message.java
+        find . -name "*.java" | xargs javac -d out
